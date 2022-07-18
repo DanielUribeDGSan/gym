@@ -900,8 +900,9 @@ body.light-mode .video-bg:before {
 .apps-card {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	flex-wrap: wrap;
-	width: calc(100% + 20px);
+	width: 100%;
 }
 
 .app-card {
@@ -915,7 +916,7 @@ body.light-mode .video-bg:before {
 	padding: 20px;
 	cursor: pointer;
 	transition: 0.3s ease;
-	height: 50vh;
+	height: 53vh;
 	overflow-y: auto;
 }
 
@@ -969,7 +970,7 @@ body.light-mode .video-bg:before {
 
 @media screen and (max-width: 565px) {
 	.app-card {
-		width: calc(100% - 20px);
+		width: 100%;
 		margin-top: 20px;
 	}
 
