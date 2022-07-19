@@ -925,7 +925,8 @@ body.light-mode .video-bg:before {
 	background-color: var(--theme-bg-color);
 }
 
-.app-card svg {
+.app-card svg,
+.app-card span img {
 	width: 28px;
 	border-radius: 6px;
 	margin-right: 12px;

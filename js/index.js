@@ -62,6 +62,42 @@ $(".pop-up .close").click(function () {
 
 const toggleButton = document.querySelector('.dark-light');
 
-toggleButton.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
+// toggleButton.addEventListener('click', () => {
+//     document.body.classList.toggle('light-mode');
+// });
+
+document.querySelector("#btn_lunes").addEventListener('click', () => {
+    document.getElementById('martes_content').classList.add('d-none');
+    document.getElementById('miercoles_content').classList.add('d-none');
+    document.getElementById('jueves_content').classList.add('d-none');
+    document.getElementById('viernes_content').classList.add('d-none');
+    document.getElementById('lunes_content').classList.remove('d-none');
+});
+document.querySelector("#btn_martes").addEventListener('click', () => {
+    document.getElementById('lunes_content').classList.add('d-none');
+    document.getElementById('miercoles_content').classList.add('d-none');
+    document.getElementById('jueves_content').classList.add('d-none');
+    document.getElementById('viernes_content').classList.add('d-none');
+    document.getElementById('martes_content').classList.remove('d-none');
+});
+document.querySelector("#btn_miercoles").addEventListener('click', () => {
+    document.getElementById('lunes_content').classList.add('d-none');
+    document.getElementById('martes_content').classList.add('d-none');
+    document.getElementById('jueves_content').classList.add('d-none');
+    document.getElementById('viernes_content').classList.add('d-none');
+    document.getElementById('miercoles_content').classList.remove('d-none');
+});
+document.querySelector("#btn_jueves").addEventListener('click', () => {
+    document.getElementById('lunes_content').classList.add('d-none');
+    document.getElementById('martes_content').classList.add('d-none');
+    document.getElementById('miercoles_content').classList.add('d-none');
+    document.getElementById('viernes_content').classList.add('d-none');
+    document.getElementById('jueves_content').classList.remove('d-none');
+});
+document.querySelector("#btn_viernes").addEventListener('click', () => {
+    document.getElementById('lunes_content').classList.add('d-none');
+    document.getElementById('martes_content').classList.add('d-none');
+    document.getElementById('miercoles_content').classList.add('d-none');
+    document.getElementById('jueves_content').classList.add('d-none');
+    document.getElementById('viernes_content').classList.remove('d-none');
 });

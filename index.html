@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="./css/style.css?ver=1.0.1" rel="stylesheet">
+    <link href="./css/style.css?ver=1.0.2" rel="stylesheet">
 </head>
 
 <body>
@@ -29,229 +29,343 @@
                 <div class="main-header">
                     <a class="menu-link-main">Daniel Uribe</a>
                     <div class="header-menu">
-                        <a class="main-header-link cursor-pointer is-active">Lunes</a>
-                        <a class="main-header-link cursor-pointer">Martes</a>
-                        <a class="main-header-link cursor-pointer">Miércoles</a>
-                        <a class="main-header-link cursor-pointer">Jueves</a>
-                        <a class="main-header-link cursor-pointer">Viernes</a>
+                        <a class="main-header-link cursor-pointer is-active" id="btn_lunes">Lunes</a>
+                        <a class="main-header-link cursor-pointer" id="btn_martes">Martes</a>
+                        <a class="main-header-link cursor-pointer" id="btn_miercoles">Miércoles</a>
+                        <a class="main-header-link cursor-pointer" id="btn_jueves">Jueves</a>
+                        <a class="main-header-link cursor-pointer" id="btn_viernes">Viernes</a>
 
                     </div>
                 </div>
                 <div class="content-wrapper">
                     <div class="content-section">
-                        <div class="content-section-title text-center">Bíceps y Tríceps.</div>
-                        <div class="apps-card">
-                            <div class="app-card">
-                                <span>
-                                    <svg viewBox="0 0 512 512" style="border: 1px solid #a059a9">
-                                        <path xmlns="http://www.w3.org/2000/svg"
-                                            d="M480 0H32C14.368 0 0 14.368 0 32v448c0 17.664 14.368 32 32 32h448c17.664 0 32-14.336 32-32V32c0-17.632-14.336-32-32-32z"
-                                            fill="#210027" data-original="#7b1fa2" />
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M192 64h-80c-8.832 0-16 7.168-16 16v352c0 8.832 7.168 16 16 16s16-7.168 16-16V256h64c52.928 0 96-43.072 96-96s-43.072-96-96-96zm0 160h-64V96h64c35.296 0 64 28.704 64 64s-28.704 64-64 64zM400 256h-32c-18.08 0-34.592 6.24-48 16.384V272c0-8.864-7.168-16-16-16s-16 7.136-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16v-96c0-26.464 21.536-48 48-48h32c8.832 0 16-7.168 16-16s-7.168-16-16-16z"
-                                                fill="#f6e7fa" data-original="#e1bee7" />
-                                        </g>
-                                    </svg>
-                                    Calentamiento
-                                </span>
-                                <div class="app-card__subtext">Curl de bíceps con mancuernas y giro, de neutro a supino,
-                                    alternado. 3 sets x 20 reps a dos manos.</div>
-                                <img class="img-fluid img-style" src="./img/Imagen_1.png" alt="">
-                                <!-- <div class="app-card-buttons">
+                        <div id="lunes_content">
+                            <div class="content-section-title text-center">Bíceps y Tríceps.</div>
+                            <div class="apps-card">
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Calentamiento
+                                    </span>
+                                    <div class="app-card__subtext">Curl de bíceps con mancuernas y giro, de neutro a
+                                        supino,
+                                        alternado. 3 sets x 20 reps a dos manos.</div>
+                                    <img class="img-fluid img-style" src="./img/lunes/Imagen_1.png" alt="">
+                                    <!-- <div class="app-card-buttons">
                                     <button class="content-button status-button">Terminado</button>
                                 </div> -->
-                            </div>
-                            <div class="app-card">
-                                <span>
-                                    <svg viewBox="0 0 512 512" style="border: 1px solid #a059a9">
-                                        <path xmlns="http://www.w3.org/2000/svg"
-                                            d="M480 0H32C14.368 0 0 14.368 0 32v448c0 17.664 14.368 32 32 32h448c17.664 0 32-14.336 32-32V32c0-17.632-14.336-32-32-32z"
-                                            fill="#210027" data-original="#7b1fa2" />
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M192 64h-80c-8.832 0-16 7.168-16 16v352c0 8.832 7.168 16 16 16s16-7.168 16-16V256h64c52.928 0 96-43.072 96-96s-43.072-96-96-96zm0 160h-64V96h64c35.296 0 64 28.704 64 64s-28.704 64-64 64zM400 256h-32c-18.08 0-34.592 6.24-48 16.384V272c0-8.864-7.168-16-16-16s-16 7.136-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16v-96c0-26.464 21.536-48 48-48h32c8.832 0 16-7.168 16-16s-7.168-16-16-16z"
-                                                fill="#f6e7fa" data-original="#e1bee7" />
-                                        </g>
-                                    </svg>
-                                    Ejercicio 1
-                                </span>
-                                <div class="app-card__subtext">Extensión de tríceps con soga, en polea alta, máquina
-                                    #63. 4 sets x 12 a 6 reps.<br /><br /><small>Tempo: 1 ”exp, 2 ”ctr. 3”.</small>
                                 </div>
-                                <img class="img-fluid img-style" src="./img/Imagen_2.png" alt="">
-                            </div>
-                            <div class="app-card">
-                                <span>
-                                    <svg viewBox="0 0 512 512" style="border: 1px solid #a059a9">
-                                        <path xmlns="http://www.w3.org/2000/svg"
-                                            d="M480 0H32C14.368 0 0 14.368 0 32v448c0 17.664 14.368 32 32 32h448c17.664 0 32-14.336 32-32V32c0-17.632-14.336-32-32-32z"
-                                            fill="#210027" data-original="#7b1fa2" />
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M192 64h-80c-8.832 0-16 7.168-16 16v352c0 8.832 7.168 16 16 16s16-7.168 16-16V256h64c52.928 0 96-43.072 96-96s-43.072-96-96-96zm0 160h-64V96h64c35.296 0 64 28.704 64 64s-28.704 64-64 64zM400 256h-32c-18.08 0-34.592 6.24-48 16.384V272c0-8.864-7.168-16-16-16s-16 7.136-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16v-96c0-26.464 21.536-48 48-48h32c8.832 0 16-7.168 16-16s-7.168-16-16-16z"
-                                                fill="#f6e7fa" data-original="#e1bee7" />
-                                        </g>
-                                    </svg>
-                                    (Bi Serie) ejercicio 1
-                                </span>
-                                <div class="app-card__subtext">Curl de bíceps con barra hacia el cuello, de pie,
-                                    agarre medio. 4 sets x 12 a 6 reps.<br /><br /><small>Tempo: 1”exp, 2”, 4”.</small>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 1
+                                    </span>
+                                    <div class="app-card__subtext">Extensión de tríceps con soga, en polea alta, máquina
+                                        #63. 4 sets x 12 a 6 reps.<br /><br /><small>Tempo: 1 ”exp, 2 ”ctr. 3”.</small>
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/lunes/Imagen_2.png" alt="">
                                 </div>
-                                <img class="img-fluid img-style" src="./img/Imagen_3.png" alt="">
-                            </div>
-                            <div class="app-card">
-                                <span>
-                                    <svg viewBox="0 0 512 512" style="border: 1px solid #a059a9">
-                                        <path xmlns="http://www.w3.org/2000/svg"
-                                            d="M480 0H32C14.368 0 0 14.368 0 32v448c0 17.664 14.368 32 32 32h448c17.664 0 32-14.336 32-32V32c0-17.632-14.336-32-32-32z"
-                                            fill="#210027" data-original="#7b1fa2" />
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M192 64h-80c-8.832 0-16 7.168-16 16v352c0 8.832 7.168 16 16 16s16-7.168 16-16V256h64c52.928 0 96-43.072 96-96s-43.072-96-96-96zm0 160h-64V96h64c35.296 0 64 28.704 64 64s-28.704 64-64 64zM400 256h-32c-18.08 0-34.592 6.24-48 16.384V272c0-8.864-7.168-16-16-16s-16 7.136-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16v-96c0-26.464 21.536-48 48-48h32c8.832 0 16-7.168 16-16s-7.168-16-16-16z"
-                                                fill="#f6e7fa" data-original="#e1bee7" />
-                                        </g>
-                                    </svg>
-                                    Ejercicio 2
-                                </span>
-                                <div class="app-card__subtext">Press tipo California, con mancuernas, en banco
-                                    horizontal. 4 sets x 12 a 6 reps.<br /><br /><small>Tempo: 3”, 1”exp, 2”ctr</small>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        (Bi Serie) ejercicio 1
+                                    </span>
+                                    <div class="app-card__subtext">Curl de bíceps con barra hacia el cuello, de pie,
+                                        agarre medio. 4 sets x 12 a 6 reps.<br /><br /><small>Tempo: 1”exp, 2”,
+                                            4”.</small>
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/lunes/Imagen_3.png" alt="">
                                 </div>
-                                <img class="img-fluid img-style" src="./img/Imagen_4.png" alt="">
-                            </div>
-                            <div class="app-card">
-                                <span>
-                                    <svg viewBox="0 0 512 512" style="border: 1px solid #a059a9">
-                                        <path xmlns="http://www.w3.org/2000/svg"
-                                            d="M480 0H32C14.368 0 0 14.368 0 32v448c0 17.664 14.368 32 32 32h448c17.664 0 32-14.336 32-32V32c0-17.632-14.336-32-32-32z"
-                                            fill="#210027" data-original="#7b1fa2" />
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M192 64h-80c-8.832 0-16 7.168-16 16v352c0 8.832 7.168 16 16 16s16-7.168 16-16V256h64c52.928 0 96-43.072 96-96s-43.072-96-96-96zm0 160h-64V96h64c35.296 0 64 28.704 64 64s-28.704 64-64 64zM400 256h-32c-18.08 0-34.592 6.24-48 16.384V272c0-8.864-7.168-16-16-16s-16 7.136-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16v-96c0-26.464 21.536-48 48-48h32c8.832 0 16-7.168 16-16s-7.168-16-16-16z"
-                                                fill="#f6e7fa" data-original="#e1bee7" />
-                                        </g>
-                                    </svg>
-                                    (Bi Serie) ejercicio 2
-                                </span>
-                                <div class="app-card__subtext">Curl de bíceps tipo martillo lateral a dos manos. 4 sets
-                                    x 12 a 6 reps.<br /><br /><small>Tempo: 1”exp, 1”ctr, 3”.</small></div>
-                                <img class="img-fluid img-style" src="./img/Imagen_5.png" alt="">
-                            </div>
-                            <div class="app-card">
-                                <span>
-                                    <svg viewBox="0 0 512 512" style="border: 1px solid #a059a9">
-                                        <path xmlns="http://www.w3.org/2000/svg"
-                                            d="M480 0H32C14.368 0 0 14.368 0 32v448c0 17.664 14.368 32 32 32h448c17.664 0 32-14.336 32-32V32c0-17.632-14.336-32-32-32z"
-                                            fill="#210027" data-original="#7b1fa2" />
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M192 64h-80c-8.832 0-16 7.168-16 16v352c0 8.832 7.168 16 16 16s16-7.168 16-16V256h64c52.928 0 96-43.072 96-96s-43.072-96-96-96zm0 160h-64V96h64c35.296 0 64 28.704 64 64s-28.704 64-64 64zM400 256h-32c-18.08 0-34.592 6.24-48 16.384V272c0-8.864-7.168-16-16-16s-16 7.136-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16v-96c0-26.464 21.536-48 48-48h32c8.832 0 16-7.168 16-16s-7.168-16-16-16z"
-                                                fill="#f6e7fa" data-original="#e1bee7" />
-                                        </g>
-                                    </svg>
-                                    Ejercicio 3
-                                </span>
-                                <div class="app-card__subtext">Rompe cráneos (press francés) con mancuernas y giro, en
-                                    banco horizontal. 4 sets x 12 a 6 reps.<br /><br /><small>Tempo: 3”, 1”exp,
-                                        1”ctr.</small>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 2
+                                    </span>
+                                    <div class="app-card__subtext">Press tipo California, con mancuernas, en banco
+                                        horizontal. 4 sets x 12 a 6 reps.<br /><br /><small>Tempo: 3”, 1”exp,
+                                            2”ctr</small>
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/lunes/Imagen_4.png" alt="">
                                 </div>
-                                <img class="img-fluid img-style" src="./img/Imagen_6.png" alt="">
-                            </div>
-                            <div class="app-card">
-                                <span>
-                                    <svg viewBox="0 0 512 512" style="border: 1px solid #a059a9">
-                                        <path xmlns="http://www.w3.org/2000/svg"
-                                            d="M480 0H32C14.368 0 0 14.368 0 32v448c0 17.664 14.368 32 32 32h448c17.664 0 32-14.336 32-32V32c0-17.632-14.336-32-32-32z"
-                                            fill="#210027" data-original="#7b1fa2" />
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M192 64h-80c-8.832 0-16 7.168-16 16v352c0 8.832 7.168 16 16 16s16-7.168 16-16V256h64c52.928 0 96-43.072 96-96s-43.072-96-96-96zm0 160h-64V96h64c35.296 0 64 28.704 64 64s-28.704 64-64 64zM400 256h-32c-18.08 0-34.592 6.24-48 16.384V272c0-8.864-7.168-16-16-16s-16 7.136-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16v-96c0-26.464 21.536-48 48-48h32c8.832 0 16-7.168 16-16s-7.168-16-16-16z"
-                                                fill="#f6e7fa" data-original="#e1bee7" />
-                                        </g>
-                                    </svg>
-                                    (Bi Serie) ejercicio 3
-                                </span>
-                                <div class="app-card__subtext">Curl concentrado, con mancuerna unilateral, con apoyo en
-                                    banco. Giro de neutro a supino. 4 sets x 12 a 6 reps<br /><br /><small>Tempo: 3”,
-                                        1”exp, 1ctr”.</small></div>
-                                <img class="img-fluid img-style" src="./img/Imagen_7.png" alt="">
-                            </div>
-                            <div class="app-card">
-                                <span>
-                                    <svg viewBox="0 0 512 512" style="border: 1px solid #a059a9">
-                                        <path xmlns="http://www.w3.org/2000/svg"
-                                            d="M480 0H32C14.368 0 0 14.368 0 32v448c0 17.664 14.368 32 32 32h448c17.664 0 32-14.336 32-32V32c0-17.632-14.336-32-32-32z"
-                                            fill="#210027" data-original="#7b1fa2" />
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M192 64h-80c-8.832 0-16 7.168-16 16v352c0 8.832 7.168 16 16 16s16-7.168 16-16V256h64c52.928 0 96-43.072 96-96s-43.072-96-96-96zm0 160h-64V96h64c35.296 0 64 28.704 64 64s-28.704 64-64 64zM400 256h-32c-18.08 0-34.592 6.24-48 16.384V272c0-8.864-7.168-16-16-16s-16 7.136-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16v-96c0-26.464 21.536-48 48-48h32c8.832 0 16-7.168 16-16s-7.168-16-16-16z"
-                                                fill="#f6e7fa" data-original="#e1bee7" />
-                                        </g>
-                                    </svg>
-                                    Ejercicio 4
-                                </span>
-                                <div class="app-card__subtext">Fondos para tríceps con apoyo en banco. 4 sets x 12 reps
-                                    o
-                                    fallo.<br /><br /><small>Tempo: 3”, 1”exp, 2”ctr.</small>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        (Bi Serie) ejercicio 2
+                                    </span>
+                                    <div class="app-card__subtext">Curl de bíceps tipo martillo lateral a dos manos. 4
+                                        sets
+                                        x 12 a 6 reps.<br /><br /><small>Tempo: 1”exp, 1”ctr, 3”.</small></div>
+                                    <img class="img-fluid img-style" src="./img/lunes/Imagen_5.png" alt="">
                                 </div>
-                                <img class="img-fluid img-style" src="./img/Imagen_8.png" alt="">
-                            </div>
-                            <div class="app-card">
-                                <span>
-                                    <svg viewBox="0 0 512 512" style="border: 1px solid #a059a9">
-                                        <path xmlns="http://www.w3.org/2000/svg"
-                                            d="M480 0H32C14.368 0 0 14.368 0 32v448c0 17.664 14.368 32 32 32h448c17.664 0 32-14.336 32-32V32c0-17.632-14.336-32-32-32z"
-                                            fill="#210027" data-original="#7b1fa2" />
-                                        <g xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M192 64h-80c-8.832 0-16 7.168-16 16v352c0 8.832 7.168 16 16 16s16-7.168 16-16V256h64c52.928 0 96-43.072 96-96s-43.072-96-96-96zm0 160h-64V96h64c35.296 0 64 28.704 64 64s-28.704 64-64 64zM400 256h-32c-18.08 0-34.592 6.24-48 16.384V272c0-8.864-7.168-16-16-16s-16 7.136-16 16v160c0 8.832 7.168 16 16 16s16-7.168 16-16v-96c0-26.464 21.536-48 48-48h32c8.832 0 16-7.168 16-16s-7.168-16-16-16z"
-                                                fill="#f6e7fa" data-original="#e1bee7" />
-                                        </g>
-                                    </svg>
-                                    Ejercicio 5
-                                </span>
-                                <div class="app-card__subtext">Flexión y extensión de muñecas para ante brazos, con
-                                    barra. 4 sets x 25 reps o fallo.
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 3
+                                    </span>
+                                    <div class="app-card__subtext">Rompe cráneos (press francés) con mancuernas y giro,
+                                        en
+                                        banco horizontal. 4 sets x 12 a 6 reps.<br /><br /><small>Tempo: 3”, 1”exp,
+                                            1”ctr.</small>
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/lunes/Imagen_6.png" alt="">
                                 </div>
-                                <img class="img-fluid img-style" src="./img/Imagen_9.png" alt="">
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        (Bi Serie) ejercicio 3
+                                    </span>
+                                    <div class="app-card__subtext">Curl concentrado, con mancuerna unilateral, con apoyo
+                                        en
+                                        banco. Giro de neutro a supino. 4 sets x 12 a 6 reps<br /><br /><small>Tempo:
+                                            3”,
+                                            1”exp, 1ctr”.</small></div>
+                                    <img class="img-fluid img-style" src="./img/lunes/Imagen_7.png" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 4
+                                    </span>
+                                    <div class="app-card__subtext">Fondos para tríceps con apoyo en banco. 4 sets x 12
+                                        reps
+                                        o
+                                        fallo.<br /><br /><small>Tempo: 3”, 1”exp, 2”ctr.</small>
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/lunes/Imagen_8.png" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 5
+                                    </span>
+                                    <div class="app-card__subtext">Flexión y extensión de muñecas para ante brazos, con
+                                        barra. 4 sets x 25 reps o fallo.
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/lunes/Imagen_9.png" alt="">
+                                </div>
                             </div>
-
-
                         </div>
-                    </div>
 
-
-                    <div class="content-wrapper-header mt-4">
-                        <div class="content-wrapper-context">
-                            <h3 class="img-content">
-                                <svg viewBox="0 0 512 512">
-                                    <path
-                                        d="M467 0H45C20.099 0 0 20.099 0 45v422c0 24.901 20.099 45 45 45h422c24.901 0 45-20.099 45-45V45c0-24.901-20.099-45-45-45z"
-                                        fill="#d6355b" data-original="#ff468c" />
-                                    <path xmlns="http://www.w3.org/2000/svg"
-                                        d="M512 45v422c0 24.901-20.099 45-45 45H256V0h211c24.901 0 45 20.099 45 45z"
-                                        fill="#d6355b" data-original="#d72878" />
-                                    <path xmlns="http://www.w3.org/2000/svg"
-                                        d="M467 30H45c-8.401 0-15 6.599-15 15v422c0 8.401 6.599 15 15 15h422c8.401 0 15-6.599 15-15V45c0-8.401-6.599-15-15-15z"
-                                        fill="#2e000a" data-original="#700029" />
-                                    <path xmlns="http://www.w3.org/2000/svg"
-                                        d="M482 45v422c0 8.401-6.599 15-15 15H256V30h211c8.401 0 15 6.599 15 15z"
-                                        fill="#2e000a" data-original="#4d0e06" />
-                                    <path xmlns="http://www.w3.org/2000/svg"
-                                        d="M181 391c-41.353 0-75-33.647-75-75 0-8.291 6.709-15 15-15s15 6.709 15 15c0 24.814 20.186 45 45 45s45-20.186 45-45-20.186-45-45-45c-41.353 0-75-33.647-75-75s33.647-75 75-75 75 33.647 75 75c0 8.291-6.709 15-15 15s-15-6.709-15-15c0-24.814-20.186-45-45-45s-45 20.186-45 45 20.186 45 45 45c41.353 0 75 33.647 75 75s-33.647 75-75 75z"
-                                        fill="#d6355b" data-original="#ff468c" />
-                                    <path xmlns="http://www.w3.org/2000/svg"
-                                        d="M391 361h-30c-8.276 0-15-6.724-15-15V211h45c8.291 0 15-6.709 15-15s-6.709-15-15-15h-45v-45c0-8.291-6.709-15-15-15s-15 6.709-15 15v45h-15c-8.291 0-15 6.709-15 15s6.709 15 15 15h15v135c0 24.814 20.186 45 45 45h30c8.291 0 15-6.709 15-15s-6.709-15-15-15z"
-                                        fill="#d6355b" data-original="#d72878" />
-                                </svg>
-                                Adobe Stock
-                            </h3>
-                            <div class="content-text">Grab yourself 10 free images from Adobe Stock in a 30-day free
-                                trial
-                                plan and find perfect image, that will help you with your new project.</div>
-                            <button class="content-button">Start free trial</button>
+                        <div class="d-none" id="martes_content">
+                            <div class="content-section-title text-center">Pectorales y Hombros.</div>
+                            <div class="apps-card">
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Calentamiento
+                                    </span>
+                                    <div class="app-card__subtext">Pectoral fly (aperturas pectorales) en máquina #21 3
+                                        sets x 15 reps. <br /><br /><small>Tempo: 1”, 1”ctr. 3”.</small></div>
+                                    <img class="img-fluid img-style" src="./img/martes/Imagen_1.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 1
+                                    </span>
+                                    <div class="app-card__subtext">Press pectoral en maquina #20, agarre prono. 4 sets x
+                                        12 a 6 reps.<br /><br /><small>Tempo: 4”, 1”exp, 2”ctr.</small>
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/martes/Imagen_2.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 2
+                                    </span>
+                                    <div class="app-card__subtext">Press pectoral, en banco horizontal, con mancuernas y
+                                        giro de prono a neutro. 4 sets x 12 a 6 reps.<br /><br /><small>Tempo: 4”,
+                                            1”exp, 2”.
+                                        </small>
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/martes/Imagen_3.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        (Bi Serie) ejercicio 2
+                                    </span>
+                                    <div class="app-card__subtext">Elevaciones laterales P/ hombros, con mancuernas.
+                                        Carga de 60% a 70%. 4 sets x 12 a 6 reps.<br /><br /><small>Tempo: 1”exp, 1”ctr,
+                                            3”.</small></div>
+                                    <img class="img-fluid img-style" src="./img/martes/Imagen_4.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 3
+                                    </span>
+                                    <div class="app-card__subtext">Press arnold a dos manos, con mancuernas, sentado en
+                                        banco a 90°. 4 sets x 12 a 6 reps. Carga de 70%.
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/martes/Imagen_5.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        (Bi Serie) ejercicio 3
+                                    </span>
+                                    <div class="app-card__subtext">Cross over con mancuernas, de pie o en banco,
+                                        cerrando al frente del pectoral. 4 sets x 12 a 6 reps.<br /><br /><small>Tempo:
+                                            1”exp, 1”ctr, 3”.</small></div>
+                                    <img class="img-fluid img-style" src="./img/martes/Imagen_6.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 4
+                                    </span>
+                                    <div class="app-card__subtext">Posteriores en máquina #21, pectoral en el respaldo
+                                        (invertido).
+                                        4 sets x 10 reps con agarre prono, 10 neutro y 10 invertido. Cada
+                                        serie.<br /><br /><small>Tempo: 1”,1”, 2”.</small>
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/martes/Imagen_7.png" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        (Bi Serie) ejercicio 4
+                                    </span>
+                                    <div class="app-card__subtext">Aperturas pectorales en máquina #21. 4 sets x 12 a 6
+                                        reps.<br /><br /><small>Tempo: 1”exp, 2”ctr, 4”.</small>
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/martes/Imagen_8.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 5
+                                    </span>
+                                    <div class="app-card__subtext">Crunch con palmada tras los muslos, de forma
+                                        alternada. 4 sets x 16 reps, 8 por cada lado.
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/martes/Imagen_9.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 6
+                                    </span>
+                                    <div class="app-card__subtext">.-Crunch con ½ giro de columna, con apoyo en los
+                                        pies. Giro izquierdo y derecho. 4 sets x 16 reps, 8 por cada lado
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/martes/Imagen_10.jpg" alt="">
+                                </div>
+                            </div>
                         </div>
-                        <img class="content-wrapper-img" src="https://assets.codepen.io/3364143/glass.png" alt="">
+                        <div class="d-none" id="miercoles_content">
+                            <div class="content-section-title text-center">Piernas en general.</div>
+                            <div class="apps-card">
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Calentamiento
+                                    </span>
+                                    <div class="app-card__subtext">Sentadilla sin peso, posición neutra, con isometría
+                                        por 3” segundos. 3 sets x 10 reps con isometría de 3” cada
+                                        repetición.</div>
+                                    <img class="img-fluid img-style" src="./img/miercoles/Imagen_1.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 1
+                                    </span>
+                                    <div class="app-card__subtext">Sentadilla en maquina Smith #60, posición semi
+                                        abierta, puntas ligeramente abiertas.
+                                        2 sets x 15 reps con carga del 30% aprox. 2 sets x 12 a 6 reps con carga del 70
+                                        % aprox.
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/miercoles/Imagen_2.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 2
+                                    </span>
+                                    <div class="app-card__subtext">Prensa a 45° #09, posición Neutra y pies juntos
+                                        parte superior. 2 sets x 12 a 6 reps con posición neutra.
+
+                                        2 sets x 12 a 6 reps con posición pies juntos, en la parte superior de la
+                                        plataforma.<br /><br /><small>Tempo: 4”, 1”exp, 1ctr.
+                                        </small>
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/miercoles/Imagen_3.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 3
+                                    </span>
+                                    <div class="app-card__subtext">Extensión de cuádriceps en maquina #02.
+                                        3 sets x 12 a 6 reps con tempo: 1”exp, 2”ctr, 4”. Carga del 70%. 1 set x 15 reps
+                                        o fallo con tempo: regular. Carga del
+                                        80%.
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/miercoles/Imagen_4.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 4
+                                    </span>
+                                    <div class="app-card__subtext">Curl para isquiotibilales en maquina #03, acostado,
+                                        con 2 pulsos. 4 sets x 12 a 6 reps.<br /><br /><small>Tempo: 1”exp, 1”ctr,
+                                            4”.</small>
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/miercoles/Imagen_5.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 5
+                                    </span>
+                                    <div class="app-card__subtext">Sentadilla tipo sumo, con mancuerna, a dos bancos o
+                                        en piso. 3 sets x 12 a 6 reps con tempo: 4” y1”exp. Carga del 70%. 1 set x 16
+                                        reps con tempo: parciales regulares. Carga del 80%.
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/miercoles/Imagen_6.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 6
+                                    </span>
+                                    <div class="app-card__subtext">abducción y aducción de caderas en maquina #05 y 06 o
+                                        con bandas de resistencia. 4 sets x 16 reps. (hacerlo al inverso
+                                        también)<br /><br /><small>Tempo: 1”exp,
+                                            2”ctr, 3”.
+                                        </small>
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/miercoles/Imagen_7.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 7
+                                    </span>
+                                    <div class="app-card__subtext">Sentadilla isométrica sobre ½ bossu, manos al frente.
+                                        3 sets x 45” segundos.
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/miercoles/Imagen_9.jpg" alt="">
+                                </div>
+                                <div class="app-card">
+                                    <span>
+                                        <img src="./img/levantador-de-pesas.png" alt="" width="30" height="auto">
+                                        Ejercicio 8
+                                    </span>
+                                    <div class="app-card__subtext">Flexión de talones en maquina #01.
+                                        4 sets a 3 posiciones, iniciando con neutra e igualmente finalizando, abiertas y
+                                        cerradas serían las otras 2.
+                                    </div>
+                                    <img class="img-fluid img-style" src="./img/miercoles/Imagen_10.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none" id="jueves_content"></div>
+                        <div class="d-none" id="viernes_content"></div>
+
                     </div>
                 </div>
             </div>
